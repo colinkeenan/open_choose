@@ -15,5 +15,5 @@ md5sums=('2422db121230fb8f281a27ed5e4dd34d')
 
 package() {
   install -d -m755 "$pkgdir/usr/bin"
-  install -m755 open_choose "$pkgdir/usr/bin/gmv"
+  install -m755 open_choose "$pkgdir/usr/bin/open_choose"
 }
