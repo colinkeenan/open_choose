@@ -1,5 +1,6 @@
 #!/bin/bash
 
+filename=$(basename "$1")
 tp=`mimetype "$1"`           # get mimetype of the file
 tp="${tp#$1:' '}"            # remove path/file from the output to just get the mimetype
                              # get the list of .desktop files for that mimetype
@@ -15,7 +16,7 @@ list_arr+=( "Other .desktop file" )
 
 # Ask what .desktop file should be used to open $1
 
-desktop_file=`zenity --list --title="Open Choose " --text="$(basename \"$1\")" --column="Open With ..." ${list_arr[@]}`
+desktop_file=`zenity --list --title="Open Choose " --text="$filename" --column="Open With ..." ${list_arr[@]}`
 IFS=$oldIFS                  # restore old delimiter
 
 # if Other .desktop is desired, let them choose whatever they want
