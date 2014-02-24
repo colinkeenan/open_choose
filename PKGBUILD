@@ -1,7 +1,7 @@
 # Maintainer: Colin Keenan <colinnkeenan at gmail dot com>
 
 pkgname=open_choose
-pkgver=1.0
+pkgver=1.1
 pkgrel=1
 pkgdesc="'catfish --wrapper=open_choose' for open-with dialog when open file in catfish"
 arch=('any')
@@ -11,7 +11,7 @@ depends=('zenity' 'perl-file-mimeinfo')
 install=${pkgname}.install
 
 source=('open_choose')
-md5sums=('2422db121230fb8f281a27ed5e4dd34d')
+md5sums=('a7adbaceaa028f60ea0e2de19db984f5')
 
 package() {
   install -d -m755 "$pkgdir/usr/bin"
