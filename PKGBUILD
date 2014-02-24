@@ -11,7 +11,7 @@ depends=('zenity' 'perl-file-mimeinfo')
 install=${pkgname}.install
 
 source=('open_choose')
-md5sums=('a7adbaceaa028f60ea0e2de19db984f5')
+md5sums=('093c2a9cb44c2121d38dcc3500fde24d')
 
 package() {
   install -d -m755 "$pkgdir/usr/bin"

@@ -15,7 +15,7 @@ list_arr+=( "Other .desktop file" )
 
 # Ask what .desktop file should be used to open $1
 
-desktop_file=`zenity --list --title="Open Choose " --text="$(basename '$1')" --column="Open With ..." ${list_arr[@]}`
+desktop_file=`zenity --list --title="Open Choose " --text="$(basename \"$1\")" --column="Open With ..." ${list_arr[@]}`
 IFS=$oldIFS                  # restore old delimiter
 
 # if Other .desktop is desired, let them choose whatever they want
