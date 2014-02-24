@@ -3,7 +3,7 @@
 pkgname=open_choose
 pkgver=1.0
 pkgrel=1
-pkgdesc="'catfish --wrapper open_choose' for open-with dialog when open file in catfish"
+pkgdesc="'catfish --wrapper=open_choose' for open-with dialog when open file in catfish"
 arch=('any')
 url="https://github.com/colinkeenan/open_choose"
 license=('GPL')
