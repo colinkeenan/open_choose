@@ -1,7 +1,7 @@
 # Maintainer: Colin Keenan <colinnkeenan at gmail dot com>
 
 pkgname=open_choose
-pkgver=1.3
+pkgver=1.4
 pkgrel=1
 pkgdesc="'catfish --wrapper=open_choose' for open-with dialog when open file in catfish"
 arch=('any')
